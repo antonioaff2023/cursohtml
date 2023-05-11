@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(128, 146, 158);
+}
+h1 {
+    color:rgb(40, 40, 151);
+    font-family:  Arial;
+    font-size: 20px; 
+    font-style: oblique;
+}
+h2 {
+    color: rgb(62, 231, 77);
+    font-family:  'Franklin Gothic Medium';
+    font-size: 16px; 
+}
+
+p {
+    font-family: Times;
+}
