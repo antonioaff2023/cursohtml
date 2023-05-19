@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!--O método post deve ser usado sempre que passar de 3000 bites-->
+    <p>
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+            <option value="SP" select>---Escolha---</option>
+            <optgroup label="Região Sudeste">
+                <option value="ES">Espírito Santo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+            <optgroup label = "Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="listprof">
+        <datalist id="listprof">
+            <option>Administrador</option>
+            <option>Contador</option>
+            <option>Eletrotécnico</option>
+            <option>Engenheiro Civil</option>
+        </datalist>
+        <!--Se quiser pode inserir value em option. -->
+    </p>
+
+    <p>
+        <label for="imsg">Mensagem:</label><br>
+        <textarea name="msg" id="imsg" cols="20" rows="5" style="font-size: 2em;"></textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+    
+</body>
+</html>
